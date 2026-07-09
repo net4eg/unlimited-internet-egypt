@@ -115,13 +115,13 @@
                     <span class="bar"></span>
                 </button>
                 <ul id="navLinks" class="nav-list">
+                    <li><a href="#story" data-translate="navStory">قصتنا</a></li>
+                    <li><a href="#why" data-translate="navWhy">ليه مهم</a></li>
                     <li><a href="#operators" data-translate="navOperators">الشركات</a></li>
-                    <li><a href="#mission" data-translate="navMission">المهمة الحالية</a></li>
-                    <li><a href="#downloads" data-translate="navdownloads">التحميلات</a></li>
-                    <li><a href="updates.html" data-translate="navUpdates">التحديثات</a></li>
-                    <li><a href="#phases-container" data-translate="navPhases">المراحل</a></li>
                     <li><a href="#how" data-translate="navHow">كيف تشارك</a></li>
-                    <li><a href="#footer" data-translate="navWhy">تواصل</a></li>
+                    <li><a href="#join" data-translate="navJoin">انضم</a></li>
+                    <li><a href="#faq" data-translate="navFaq">الأسئلة الشائعة</a></li>
+                    <li><a href="updates.html" data-translate="navUpdates">التحديثات</a></li>
                 </ul>
             </nav>
         </div>
@@ -138,34 +138,153 @@
         </div>
         
         <div class="hero-content">
-            <h2 class="hero-title" data-aos="fade-up" data-translate="heroTitle">
-                مستقبلنا يبدأ بإنترنت غير محدود
-            </h2>
-            <p class="hero-subtitle" data-aos="fade-up" data-translate="heroSubtitle">
-                معًا لـ #انترنت_غير_محدود_في_مصر
-            </p>
-            
-            <div class="hero-buttons" data-aos="fade-up">
-                <a href="https://www.facebook.com/groups/414290608230584/?ref=share&mibextid=NSMWBT" target="_blank" rel="noopener" class="btn btn-primary">
-                    <i class="fab fa-facebook-f"></i>
-                    <span data-translate="btnJoinGroup">انضم للجروب</span>
-                </a>
-                <button class="btn btn-secondary" onclick="openPetition()">
-                    <i class="fas fa-pen-to-square"></i>
-                    <span data-translate="btnSignPetition">وقّع العريضة</span>
-                    <div class="counter"><span id="count"></span>
-                 </div>
-               </button>
+            <span class="hero-eyebrow" data-aos="fade-up">
+                <i class="fas fa-hashtag"></i>
+                <span data-translate="heroEyebrow">#انترنت_غير_محدود_في_مصر</span>
+            </span>
 
-                <button class="btn btn-outline" onclick="openShare()">
-                    <i class="fas fa-share-nodes"></i>
-                    <span data-translate="btnShare">شارك الحملة</span>
+            <h2 class="hero-title" data-aos="fade-up" data-translate="heroTitle">الإنترنت في مصر بقى محدود...<br>وإحنا بنحاول نغيّر ده.</h2>
+            <p class="hero-subtitle" data-aos="fade-up" data-translate="heroSubtitle">
+                انضم لحملة مجتمعية تطوعية بتطالب بإنترنت عادل وغير محدود لكل المصريين.
+            </p>
+
+            <div class="hero-buttons" data-aos="fade-up">
+                <button class="btn btn-danger" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">
+                    <i class="fas fa-bullhorn"></i>
+                    <span data-translate="btnJoinCampaign">انضم للحملة</span>
+                </button>
+                <button class="btn btn-dark" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+                    <i class="fas fa-book-open"></i>
+                    <span data-translate="btnLearnStory">اعرف القصة</span>
                 </button>
             </div>
 
             <small class="hero-note" data-aos="fade-up" data-translate="heroNote">
                 تم إنشاء هذا الموقع كدعم شخصي،<b>وبشكل غير ربحي نهائي</b>، إيمانًا بأهمية إنترنت غير محدود وعادل للجميع.
             </small>
+        </div>
+    </section>
+
+    <!-- قصة الحملة -->
+    <section id="story" class="story-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-timeline"></i>
+                <span data-translate="storyTitle">قصة الحملة</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" style="text-align:center;" data-translate="storySubtitle">من فكرة بسيطة لصوت وصل لقبة البرلمان</p>
+
+            <div class="story-timeline" data-aos="fade-up">
+                <div class="story-node">
+                    <div class="story-node-marker">
+                        <div class="story-node-dot"></div>
+                        <div class="story-node-line"></div>
+                    </div>
+                    <div class="story-node-content">
+                        <h3 class="story-node-title"><i class="fas fa-rocket"></i> <span data-translate="story1Title">البداية</span></h3>
+                        <p class="story-node-desc" data-translate="story1Desc">انطلق هذا الموقع كمبادرة تطوعية غير ربحية لتنظيم الجهود وجمع تواقيع المصريين المطالبين بإنترنت عادل.</p>
+                    </div>
+                </div>
+                <div class="story-node">
+                    <div class="story-node-marker">
+                        <div class="story-node-dot"></div>
+                        <div class="story-node-line"></div>
+                    </div>
+                    <div class="story-node-content">
+                        <h3 class="story-node-title"><i class="fas fa-landmark"></i> <span data-translate="story2Title">البرلمان يتحرك</span></h3>
+                        <p class="story-node-desc" data-translate="story2Desc">لجنة الاتصالات بمجلس النواب تعلن دراسة خفض الأسعار ومناقشة التحول لنظام إنترنت بلا حدود.</p>
+                    </div>
+                </div>
+                <div class="story-node">
+                    <div class="story-node-marker">
+                        <div class="story-node-dot"></div>
+                        <div class="story-node-line"></div>
+                    </div>
+                    <div class="story-node-content">
+                        <h3 class="story-node-title"><i class="fas fa-circle-exclamation"></i> <span data-translate="story3Title">رد رسمي متحفظ</span></h3>
+                        <p class="story-node-desc" data-translate="story3Desc">مسؤول بوزارة الاتصالات يصرّح بأن فكرة الإنترنت غير المحدود مش مطروحة حالياً، ما يؤكد أهمية استمرار الضغط الشعبي.</p>
+                    </div>
+                </div>
+                <div class="story-node">
+                    <div class="story-node-marker">
+                        <div class="story-node-dot"></div>
+                        <div class="story-node-line"></div>
+                    </div>
+                    <div class="story-node-content">
+                        <h3 class="story-node-title"><i class="fas fa-fire"></i> <span data-translate="story4Title">الهاشتاج يتصدر</span></h3>
+                        <p class="story-node-desc" data-translate="story4Desc">هاشتاج #انترنت_غير_محدود_في_مصر يشهد تفاعلاً واسعاً من آلاف المستخدمين عبر مواقع التواصل.</p>
+                    </div>
+                </div>
+                <div class="story-node">
+                    <div class="story-node-marker">
+                        <div class="story-node-dot"></div>
+                        <div class="story-node-line"></div>
+                    </div>
+                    <div class="story-node-content">
+                        <h3 class="story-node-title"><i class="fas fa-magnifying-glass"></i> <span data-translate="story5Title">كشف الحقيقة التقنية</span></h3>
+                        <p class="story-node-desc" data-translate="story5Desc">فيديوهات وتحقيقات تقنية بتكشف عدم وجود تكلفة إضافية حقيقية، وبتقارن مصر بدول بتوفر إنترنت أرخص وأوسع.</p>
+                    </div>
+                </div>
+                <div class="story-node is-today">
+                    <div class="story-node-marker">
+                        <div class="story-node-dot"></div>
+                        <div class="story-node-line"></div>
+                    </div>
+                    <div class="story-node-content">
+                        <h3 class="story-node-title"><i class="fas fa-star"></i> <span data-translate="story6Title">اليوم</span></h3>
+                        <p class="story-node-desc" data-translate="story6Desc">الحملة مستمرة، ولسه محتاجين صوتك عشان الضغط يفضل مستمر.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ليه إنترنت غير محدود مهم -->
+    <section id="why" class="why-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-circle-question"></i>
+                <span data-translate="whyTitle">لماذا نطالب بإنترنت غير محدود؟</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" style="text-align:center;" data-translate="whySubtitle">كل جانب من حياتنا الرقمية بيعتمد على اتصال قوي</p>
+
+            <div class="reasons-grid" data-aos="fade-up">
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="operator-name" data-translate="whyEduTitle">التعليم</h3>
+                    <p data-translate="whyEduDesc">ملايين الطلاب بيعتمدوا على الإنترنت في المحاضرات، الأبحاث، والامتحانات الأونلاين.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-house-laptop"></i></div>
+                    <h3 class="operator-name" data-translate="whyWorkTitle">العمل عن بعد</h3>
+                    <p data-translate="whyWorkDesc">الاجتماعات، رفع الملفات، والتواصل مع فرق العمل كلها محتاجة اتصال مستقر وسريع.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="operator-name" data-translate="whyCodeTitle">البرمجة</h3>
+                    <p data-translate="whyCodeDesc">تحميل المكتبات، رفع المشاريع، والتعلم من مصادر أونلاين بيستهلك بيانات ضخمة يومياً.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-photo-film"></i></div>
+                    <h3 class="operator-name" data-translate="whyContentTitle">صناعة المحتوى</h3>
+                    <p data-translate="whyContentDesc">رفع الفيديوهات والصور بجودة عالية بقى جزء أساسي من شغل آلاف المصريين.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3 class="operator-name" data-translate="whyGamingTitle">الألعاب</h3>
+                    <p data-translate="whyGamingDesc">الألعاب الأونلاين والبث المباشر بيحتاجوا سرعة وسعة بيانات من غير قلق من نفاذ الباقة.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-store"></i></div>
+                    <h3 class="operator-name" data-translate="whyBizTitle">المشاريع الصغيرة</h3>
+                    <p data-translate="whyBizDesc">أصحاب المشاريع الصغيرة بيديروا مبيعاتهم وتسويقهم بالكامل عبر الإنترنت.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="operator-name" data-translate="whyEconTitle">الاقتصاد الرقمي</h3>
+                    <p data-translate="whyEconDesc">مستقبل الاقتصاد المصري مرتبط باتصال قوي يقدر المصريين ينافسوا بيه عالمياً.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -508,7 +627,7 @@
                     </div>
                     
                     <div class="download-actions">
-                        <a target="_blank" href="https://www.mediafire.com/file/7hs9twvt7mf1hjq/Poster_%2523unlimated_internet_in_egypt_.pdf/file" class="download-btn" onclick="downloadFile('poster'); return false;">
+                        <a target="_blank" href="https://www.mediafire.com/file/7hs9twvt7mf1hjq/Poster_%2523unlimated_internet_in_egypt_.pdf/file" class="download-btn" onclick="downloadFile('poster')">
                             <i class="fas fa-download"></i>
                             <span lang="ar">تحميل البوستر</span>
                             <span lang="en" style="display:none;">Download Poster</span>
@@ -519,9 +638,8 @@
                     </div>
                     
                     <!-- معاينة البوستر -->
-                      <div class="download-preview" style="border: 1px solid #ccc; border-radius: 10px; overflow: hidden;">
-                       <img src="img/poster.png" alt="Poster Preview" style="width: 100%; height: 100%; object-fit: cover;">
-                       </div>
+                    <div class="download-preview" style="border: 1px solid #ccc; border-radius: 10px; overflow: hidden;">
+                        <img src="img/poster.png" alt="Poster Preview" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -559,7 +677,7 @@
                     </div>
                     
                     <div class="download-actions">
-                        <a target="_blank" href="https://www.mediafire.com/file/ncflcx6m55l3o4v/UNLIMITED_NET_APP_V1.8_NEW.apk/file" class="download-btn" onclick="downloadFile('app'); return false;">
+                        <a target="_blank" href="https://www.mediafire.com/file/ncflcx6m55l3o4v/UNLIMITED_NET_APP_V1.8_NEW.apk/file" class="download-btn" onclick="downloadFile('app')">
                             <i class="fas fa-download"></i>
                             <span lang="ar">تحميل التطبيق</span>
                             <span lang="en" style="display:none;">Download App</span>
@@ -939,10 +1057,194 @@
                         <button onclick="shareToFacebook()" class="social-btn facebook" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </button>
-                        <button onclick="shareToTwitter()" class="social-btn twitter" title="Twitter">
-                            <i class="fab fa-twitter"></i>
+                        <button onclick="shareToTwitter()" class="social-btn twitter" title="X">
+                            <i class="fab fa-x-twitter"></i>
                         </button>
                     </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3 data-translate="step4Title">اطبع ملصق QR</h3>
+                    <p data-translate="step4Desc">حمّل بوستر الحملة واطبعه أو علّقه في أماكن التجمعات</p>
+                    <a href="#downloads" class="step-btn">
+                        <i class="fas fa-print"></i>
+                        <span data-translate="btnDownloadPoster">حمّل البوستر</span>
+                    </a>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3 data-translate="step5Title">تابع التحديثات</h3>
+                    <p data-translate="step5Desc">ابقى على اطلاع بآخر أخبار وتطورات الحملة أولاً بأول</p>
+                    <a href="updates.html" class="step-btn">
+                        <i class="fas fa-newspaper"></i>
+                        <span data-translate="viewUpdatesBtn">مشاهدة التحديثات والأخبار</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- انضم إلينا -->
+    <section id="join" class="join-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-people-group"></i>
+                <span data-translate="joinTitle">انضم إلينا دلوقتي</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" style="text-align:center;" data-translate="joinSubtitle">اختار الطريقة الأنسب ليك وشارك بصوتك</p>
+
+            <div class="join-grid" data-aos="fade-up">
+                <a href="https://www.facebook.com/groups/414290608230584/?ref=share&mibextid=NSMWBT" target="_blank" rel="noopener" class="join-card accent-facebook">
+                    <div class="join-card-icon"><i class="fab fa-facebook-f"></i></div>
+                    <h3 class="join-card-title" data-translate="footerFacebook">فيسبوك</h3>
+                    <p class="join-card-desc" data-translate="joinCardFacebookDesc">كن جزء من مجتمعنا وتابع كل التحديثات أول بأول</p>
+                    <span class="join-card-btn" data-translate="btnJoinGroup">انضم للجروب</span>
+                </a>
+
+                <button onclick="openPetition()" class="join-card accent-petition" style="cursor:pointer;">
+                    <div class="join-card-icon"><i class="fas fa-pen-to-square"></i></div>
+                    <h3 class="join-card-title" data-translate="btnSignPetition">وقّع العريضة</h3>
+                    <p class="join-card-desc" data-translate="joinCardPetitionDesc">وقّع العريضة الرسمية وخلي صوتك محسوب</p>
+                    <p class="join-card-desc" style="margin-top:-0.4rem; font-weight:700;">
+                        <span data-translate="counter">عدد الموقّعين</span>: <span id="count"></span>
+                    </p>
+                    <span class="join-card-btn" data-translate="btnSignPetition">وقّع العريضة</span>
+                </button>
+
+                <a href="https://t.me/ziad7mohamed" target="_blank" rel="noopener" class="join-card accent-telegram">
+                    <div class="join-card-icon"><i class="fab fa-telegram"></i></div>
+                    <h3 class="join-card-title" data-translate="footerTelegram">تليجرام</h3>
+                    <p class="join-card-desc" data-translate="joinCardTelegramDesc">تواصل معنا مباشرة على تليجرام</p>
+                    <span class="join-card-btn" data-translate="joinBtnTelegram">تابعنا</span>
+                </a>
+
+                <button onclick="shareToWhatsApp()" class="join-card accent-whatsapp" style="cursor:pointer;">
+                    <div class="join-card-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3 class="join-card-title" data-translate="footerWhatsapp">واتساب</h3>
+                    <p class="join-card-desc" data-translate="joinCardWhatsappDesc">شارك الحملة مع صحابك بضغطة واحدة</p>
+                    <span class="join-card-btn" data-translate="joinBtnWhatsapp">شارك الآن</span>
+                </button>
+
+                <button onclick="shareToTwitter()" class="join-card accent-twitter" style="cursor:pointer;">
+                    <div class="join-card-icon"><i class="fab fa-x-twitter"></i></div>
+                    <h3 class="join-card-title">X</h3>
+                    <p class="join-card-desc" data-translate="joinCardTwitterDesc">انشر الهاشتاج وخلي صوتك يوصل لأكبر عدد</p>
+                    <span class="join-card-btn" data-translate="joinBtnTwitter">انشر الهاشتاج</span>
+                </button>
+
+                <a href="#downloads" class="join-card accent-app">
+                    <div class="join-card-icon"><i class="fab fa-android"></i></div>
+                    <h3 class="join-card-title" lang="ar">تطبيق الحملة</h3>
+                    <p class="join-card-desc" data-translate="joinCardAppDesc">حمّل تطبيق الحملة على أندرويد</p>
+                    <span class="join-card-btn" data-translate="joinBtnApp">حمّل التطبيق</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-circle-question"></i>
+                <span data-translate="faqTitle">أسئلة شائعة</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" style="text-align:center;" data-translate="faqSubtitle">أسئلة بتتكرر كتير معانا</p>
+
+            <div class="faq-list" data-aos="fade-up">
+                <details class="faq-item">
+                    <summary data-translate="faqQ1">هل الحملة سياسية؟</summary>
+                    <p class="faq-answer" data-translate="faqA1">لا. الحملة مدنية بحتة بتطالب بحق أساسي في خدمة إنترنت عادلة، مالهاش أي انتماء سياسي أو حزبي.</p>
+                </details>
+                <details class="faq-item">
+                    <summary data-translate="faqQ2">هل الحملة ضد شركة اتصالات معينة؟</summary>
+                    <p class="faq-answer" data-translate="faqA2">لا. الحملة بتدعم تحسين جودة خدمات الإنترنت والمطالبة بسياسات أفضل للجميع، مش موجهة ضد أي شركة بعينها.</p>
+                </details>
+                <details class="faq-item">
+                    <summary data-translate="faqQ3">هل ينفع أساعد من غير ما أشارك في أي مقاطعة مستقبلية؟</summary>
+                    <p class="faq-answer" data-translate="faqA3">أكيد. تقدر تساعد بمشاركة الحملة، طباعة ملصقات QR، ودعوة أصدقائك للانضمام والتوقيع.</p>
+                </details>
+                <details class="faq-item">
+                    <summary data-translate="faqQ4">هل بياناتي آمنة لو وقعت العريضة؟</summary>
+                    <p class="faq-answer" data-translate="faqA4">نعم، التوقيعات بتتجمع عبر Google Forms ومبنبيعش أو نشارك بياناتك مع أي طرف تالت. تقدر تقرأ <a href="privacy-policy.html">سياسة الخصوصية</a> لمزيد من التفاصيل.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ساعدنا ننشر الصوت -->
+    <section id="share" class="share-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-share-nodes"></i>
+                <span data-translate="shareTitle">ساعدنا ننشر الصوت</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-translate="shareSubtitle">كل مشاركة بتقرب الهدف خطوة</p>
+
+            <div class="share-buttons-row" data-aos="fade-up">
+                <button onclick="shareToFacebook()" class="share-action-btn fb">
+                    <i class="fab fa-facebook-f"></i>
+                    <span data-translate="footerFacebook">فيسبوك</span>
+                </button>
+                <button onclick="shareToWhatsApp()" class="share-action-btn wa">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-translate="footerWhatsapp">واتساب</span>
+                </button>
+                <button onclick="shareToTelegram()" class="share-action-btn tg">
+                    <i class="fab fa-telegram"></i>
+                    <span data-translate="footerTelegram">تليجرام</span>
+                </button>
+                <button onclick="shareToTwitter()" class="share-action-btn tw">
+                    <i class="fab fa-x-twitter"></i>
+                    <span>X</span>
+                </button>
+                <button onclick="copySiteLink()" class="share-action-btn copy">
+                    <i class="fas fa-link"></i>
+                    <span data-translate="btnCopyLink">نسخ الرابط</span>
+                </button>
+                <button onclick="openShare()" class="share-action-btn native">
+                    <i class="fas fa-share-nodes"></i>
+                    <span data-translate="btnShare">شارك الحملة</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- بعد ما تنضم هيحصل ايه -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-route"></i>
+                <span data-translate="roadmapTitle">بعد ما تنضم، هيحصل ايه؟</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" style="text-align:center;" data-translate="roadmapSubtitle">رحلتك معانا في خمس خطوات</p>
+
+            <div class="roadmap-track" data-aos="fade-up">
+                <div class="roadmap-step">
+                    <div class="roadmap-step-circle"><i class="fas fa-hand-point-up"></i></div>
+                    <div class="roadmap-step-label" data-translate="roadmap1">تنضم</div>
+                </div>
+                <div class="roadmap-connector"></div>
+                <div class="roadmap-step">
+                    <div class="roadmap-step-circle"><i class="fas fa-bell"></i></div>
+                    <div class="roadmap-step-label" data-translate="roadmap2">تتابع الأخبار</div>
+                </div>
+                <div class="roadmap-connector"></div>
+                <div class="roadmap-step">
+                    <div class="roadmap-step-circle"><i class="fas fa-share-nodes"></i></div>
+                    <div class="roadmap-step-label" data-translate="roadmap3">تشارك المحتوى</div>
+                </div>
+                <div class="roadmap-connector"></div>
+                <div class="roadmap-step">
+                    <div class="roadmap-step-circle"><i class="fas fa-user-plus"></i></div>
+                    <div class="roadmap-step-label" data-translate="roadmap4">تدعو أصدقاءك</div>
+                </div>
+                <div class="roadmap-connector"></div>
+                <div class="roadmap-step">
+                    <div class="roadmap-step-circle"><i class="fas fa-flag-checkered"></i></div>
+                    <div class="roadmap-step-label" data-translate="roadmap5">تشارك في الفعاليات</div>
                 </div>
             </div>
         </div>
@@ -968,22 +1270,26 @@
     <section id="footer"><footer class="main-footer">
         <div class="container">
             <div class="footer-content">
+                <p class="footer-slogan" data-translate="footerSlogan">معًا لإنترنت عادل وغير محدود لكل المصريين</p>
                 <div class="footer-links">
-                    <a href="https://www.facebook.com/7.ziadmohamed" target="_blank" rel="noopener">
-                        <i class="fab fa-facebook-f"></i>
-                        <span data-translate="footerFacebook">فيسبوك</span>
-                    </a>
+                  
                     <a href="https://t.me/ziad7mohamed" target="_blank" rel="noopener">
                         <i class="fab fa-telegram"></i>
                         <span data-translate="footerTelegram">تليجرام</span>
                     </a>
+          
+                    <button onclick="shareToTwitter()" style="background:none;border:none;cursor:pointer;font-family:'Cairo';">
+                        <i class="fab fa-x-twitter"></i>
+                        <span>X</span>
+                    </button>
+                   
                     <a target="_blank" href="privacy-policy.html">
                         <i class="fas fa-shield-halved"></i>
                         <span data-translate="footerPrivacy">سياسة الخصوصية</span>
                     </a>
                 </div>
                 <p class="footer-copy" data-translate="footerCopyright">
-                    © 2025 حملة الإنترنت غير المحدود - جميع الحقوق محفوظة
+                    © 2026 حملة الإنترنت غير المحدود - جميع الحقوق محفوظة
                 </p>
             </div>
         </div>
@@ -991,6 +1297,12 @@
 </section>
     <!-- Toast -->
     <div id="toast" class="toast"></div>
+
+    <!-- زر الانضمام العائم -->
+    <button id="fabJoin" class="fab-join" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">
+        <i class="fas fa-bullhorn"></i>
+        <span data-translate="btnJoinCampaign">انضم للحملة</span>
+    </button>
 
     <!-- JavaScript -->
     <script defer src="app-optimized.js"></script>
