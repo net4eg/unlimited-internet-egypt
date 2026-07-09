@@ -1,4 +1,3 @@
-/* ===== متغيرات عامة ===== */
 let isArabic = true;
 let isDarkMode = false;
 

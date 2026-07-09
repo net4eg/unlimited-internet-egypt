@@ -4207,3 +4207,30 @@ img {
     z-index: 1;
     margin-top: 120px; /* لإعطاء مساحة للبانر */
 }
+
+
+/* تأثير النبض للكارت العاجل */
+.active-pulse {
+    box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4);
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+    70% { transform: scale(1.01); box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+}
+
+.status-urgent {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(231, 76, 60, 0.3);
+    color: #fff;
+}
