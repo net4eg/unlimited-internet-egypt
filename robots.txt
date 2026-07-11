@@ -1,5 +1,5 @@
 # robots.txt for Unlimited Internet Campaign Egypt
-# https://ziadmohamed-w7.github.io/campaign-site/
+# https://net4eg.github.io/unlimited-internet-egypt/
 
 User-agent: *
 Allow: /
@@ -20,7 +20,7 @@ Allow: /*.css
 Allow: /*.js
 
 # Sitemap location
-Sitemap: https://ziadmohamed-w7.github.io/campaign-site/sitemap.xml
+Sitemap: https://net4eg.github.io/unlimited-internet-egypt/sitemap.xml
 
 # Crawl delay (optional - helps prevent server overload)
 Crawl-delay: 1
